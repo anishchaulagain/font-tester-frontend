@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Type Font Tester Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎨 A modern and interactive web interface for testing and previewing different fonts with support for multiple languages. Built using React for a seamless and responsive experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔤 Preview fonts in real-time with custom text
+- 🌐 Filter fonts by supported languages
+- 🎛️ Adjust font size, weight, and style
+- 📱 Fully responsive and optimized for all screen sizes
+- ⚡ Fast performance and smooth interactions
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (with hooks)
+- **Tailwind CSS** for styling
+- **Axios** for API integration
+- **React Router** (if used)
+- **Font API** – Backend integration to fetch fonts and language support
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# Clone the repository
+git clone https://github.com/anishchaulagain/font-tester-frontend.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Navigate to the project directory
+cd font-tester-frontend
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+# Install dependencies
+npm install
+
+# Run the development server
+npm start
