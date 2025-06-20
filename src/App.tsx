@@ -1,14 +1,19 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import FontTesterLanding from './pages/LandingPage'
+import Homepage from './pages/HomePage'
 
 function App() {
   
 
   return (
     <>
-    <div className='flex items-center justify-center h-screen'>
-    <h1 className='font-bold text-5xl'>Hello World</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<FontTesterLanding />} />
+      <Route path="/homepage" element={<Homepage />} />
+
+    </Routes>
       
     </>
   )
