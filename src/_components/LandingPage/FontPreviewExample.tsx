@@ -12,7 +12,7 @@ const FontPreviewDemo = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50 dark:bg-gray-800/50">
+    <section className="py-20 px-6 bg-gray-50 dark:bg-[#131314]">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -44,7 +44,7 @@ const FontPreviewDemo = () => {
                     onClick={() => setActiveFont(index)}
                     className={`px-4 py-2 rounded-lg font-medium transition-all ${
                       activeFont === index
-                        ? 'bg-purple-500 text-white shadow-lg'
+                        ? 'bg-black dark:bg-gradient-to-br dark:from-purple-500 dark:to-pink-500 text-white shadow-lg'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                     }`}
                     whileHover={{ scale: 1.05 }}

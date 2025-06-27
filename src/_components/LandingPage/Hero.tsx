@@ -33,7 +33,7 @@ const Hero = () => {
   }
   return (
     <motion.section
-      className="pt-20 pb-32 px-6 bg-white dark:bg-slate-900"
+      className="pt-20 pb-32 px-6 bg-white dark:bg-[#131314]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -70,7 +70,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <motion.button onClick={handleClick}
-              className="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+              className="px-8 py-4 cursor-pointer bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >

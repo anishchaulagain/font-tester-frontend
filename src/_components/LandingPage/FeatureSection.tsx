@@ -29,7 +29,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 ">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
